@@ -11,6 +11,11 @@ contract StateTransV2 {
         startTime = now;
     }
     
+     //Assuming the Stage change has to be enacted APPROX every 1 mintute
+    //timeNow variable is defined for underatanding the process, you can simply use 
+    // "now" Solidity defined varaible 
+    // Of course, time duration for the Stages may depend on your application
+    
     
     function advanceState () public  {
         timeNow = now;
